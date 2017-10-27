@@ -1,0 +1,230 @@
+/*
+* @Author: GUOQIANG
+* @Date:   2017-10-05 17:02:40
+* @Last Modified by:   GUOQIANG
+* @Last Modified time: 2017-10-05 21:21:07
+*/
+
+
+/*中间分类模块*/
+
+.grid {
+    height: 480px;
+}
+
+
+/*左侧*/
+
+.grid-col1 {
+    width: 190px;
+    height: 100%;
+    background: #6e6568;
+    font-size: 16px;
+    color: #fff;/*白色给 /的，不是给字体的*/
+}
+
+.grid-col1 ul {
+    padding: 16px 0;
+}
+
+.grid-col1 ul li {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 12px;
+}
+.grid-col1 ul li:hover{
+    background-color: #9c9698;
+}
+.grid-col1 ul a{
+    color: #fff;
+    font-size: 14px;
+    margin:0 3px;
+}
+.grid-col1 ul a:hover{
+    color: #f10215;
+}
+/*banner部分*/
+.grid-col2 {
+    width: 790px;
+    height: 100%;
+    margin-left: 10px;
+}
+.grid-col2-t{
+    position: relative;
+}
+.arrow-l,
+.arrow-r{
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    top:50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,.4);
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255,255,255,.6);
+    font-family: arial;
+}
+.arrow-l{
+    left: 0;
+}
+.arrow-r{
+    right: 0;
+}
+.cicle{
+    width: 175px;
+    height: 20px;
+    border-radius: 10px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    background: rgba(255,255,255,.3);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+.cicle li{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    float: left;
+    margin:4px;
+    cursor: pointer;
+}
+.cicle li.current{
+    background-color: #f10215;
+}
+.grid-col2-b div{
+    margin-top: 10px;
+}
+/*右边模块*/
+.grid-col3 {
+    width: 190px;
+    height: 100%;
+}
+.logon{
+    height: 115px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+.logon-t{
+    width: 95px;
+    height: 60px;
+    font-size: 12px;
+    line-height: 20px;
+    white-space: nowrap;/*强制一行*/
+    overflow: hidden;/*超出部分隐藏*/
+    text-overflow: ellipsis;/*超出部分显示省略号*/
+    padding-left: 60px;
+    color: #666;
+    position: relative;
+}
+.logon-t a{
+    color: #666;
+}
+.logon-t a:hover{
+    color: #f10215;
+}
+.user-info{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.user-info img{
+    width: 100%;
+    border-radius: 50%;
+}
+.logon-b a{
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    margin-right: 3px;
+    border:1px solid #f10215;
+    text-align: center;
+    line-height: 20px;
+    color: #f10215;  
+}
+.logon-b a:hover{
+    color: #fff;
+    background: #f10215;
+}
+.news{
+    height: 155px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    padding: 7px 13px 0;
+}
+.news-t{
+    height: 19px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.news-t a{
+    float: left;
+    height: 14px;
+    line-height: 14px;
+}
+.promotion{
+    width: 38px;
+    border-right: 1px solid #ccc;
+}
+.notice{
+    margin-left: 15px;
+}
+.news-t .more{
+    float: right;
+}
+.news-t div{
+    width: 28px;
+    height: 2px;
+    background: #f10215;
+    position: absolute;
+    bottom: -1px;
+    left:0; 
+}
+.news-b ul{
+    padding:15px 0;
+}
+.news-b ul li{
+    height: 23px;
+    line-height: 23px;
+}
+.expend{
+    height: 210px;
+    overflow: hidden;
+}
+.expend ul{
+    /*父亲是190 但是里卖弄的li 宽度超过了190摆放不开，4个Li此时让ul宽度变大，超过部分隐藏即可*/
+    width: 192px;
+}
+.expend li{
+    width: 47px;
+    height: 69px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+.expend li a{
+    display: block;
+    padding-top: 15px;
+    text-align: center;
+}
+.expend li i{
+    display: block;
+    margin:0 auto;
+    margin-bottom: 10px;
+    background: url(../images/sprite_fs@1x.png);
+    width: 18px;
+    height: 23px;
+    background-position: -5px -88px;
+}
+/*.expend li:nth-child(1) i{
+    width: 18px;
+    height: 23px;
+    background-position: -5px -88px;
+}*/
